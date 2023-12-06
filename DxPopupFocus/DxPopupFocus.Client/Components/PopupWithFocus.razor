@@ -1,0 +1,35 @@
+﻿<DxButton Click="ShowPopup">@Title</DxButton>
+
+<DxPopup Width="10rem"
+         @bind-Visible="@PopupVisible"
+         Shown="@OnShown">
+    <BodyTemplate Context="PunchBody">
+        <DxTimeEdit @ref="@TimeEditor"
+                    @bind-Time="@Time"
+                    Mask="hh:mm tt">
+            <ChildContent>
+                <DxDateTimeMaskProperties CaretMode="MaskCaretMode.Advancing" />
+            </ChildContent>
+        </DxTimeEdit>
+    </BodyTemplate>
+</DxPopup>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    private bool PopupVisible { get; set; } = false;
+    private DxTimeEdit<DateTime> TimeEditor { get; set; }
+    private DateTime Time { get; set; }
+
+    private void ShowPopup()
+    {
+        PopupVisible = true;
+    }
+
+    private async Task OnShown(PopupShownEventArgs args)
+    {
+        await Task.Yield();
+        await TimeEditor.FocusAsync();
+    }
+}

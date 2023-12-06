@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DxPopupFocus", "DxPopupFocus\DxPopupFocus\DxPopupFocus.csproj", "{1E9B16EF-BC51-4CAF-BD05-0CC6B3A94576}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DxPopupFocus.Client", "DxPopupFocus\DxPopupFocus.Client\DxPopupFocus.Client.csproj", "{DC298AC3-6F38-4E9D-8526-57BCDF763AF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E9B16EF-BC51-4CAF-BD05-0CC6B3A94576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9B16EF-BC51-4CAF-BD05-0CC6B3A94576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9B16EF-BC51-4CAF-BD05-0CC6B3A94576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9B16EF-BC51-4CAF-BD05-0CC6B3A94576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC298AC3-6F38-4E9D-8526-57BCDF763AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC298AC3-6F38-4E9D-8526-57BCDF763AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC298AC3-6F38-4E9D-8526-57BCDF763AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC298AC3-6F38-4E9D-8526-57BCDF763AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
